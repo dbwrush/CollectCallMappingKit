@@ -51,6 +51,7 @@ Objects here control the placement and hitboxes of entities:
 
 - `speed`: Speed of the entity.
 - `textureHeight`: Height of the entity's texture.
+- `texturePath`: Path to the entity's texture/animation.
 - `textureWidth`: Width of the entity's texture.
 - `type`: Sets entity class (Player, Follower, or Prop).
 
