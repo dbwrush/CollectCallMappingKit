@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="32" height="96">
+  <properties>
+   <property name="activators" value="0"/>
+   <property name="deactivateAfterSeconds" type="float" value="0"/>
+   <property name="defaultActivated" type="bool" value="true"/>
+   <property name="loopAnimation" type="bool" value="false"/>
+   <property name="passiveAnimationFilePath" value=""/>
+   <property name="permanentlyActivated" type="bool" value="false"/>
+   <property name="puzzlePieceId" type="int" value="2"/>
+   <property name="textureFilePath" value=""/>
+   <property name="type" value="ToggleCollision"/>
+  </properties>
+ </object>
+</template>

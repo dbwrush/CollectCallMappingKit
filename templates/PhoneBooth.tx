@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="16" height="32">
+  <properties>
+   <property name="highlightTextureFilePath" value="textures/boothHighlight.png"/>
+   <property name="rootFilePath" value="dialogues/level5.json"/>
+   <property name="textureFilePath" value="textures/booth.png"/>
+  </properties>
+ </object>
+</template>

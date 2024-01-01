@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="32" height="32">
+  <properties>
+   <property name="destinationMapFilePath" value="maps/level2.tmx"/>
+   <property name="destinationX" type="float" value="0"/>
+   <property name="destinationY" type="float" value="0"/>
+  </properties>
+ </object>
+</template>

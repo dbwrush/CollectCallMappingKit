@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="32" height="32">
+  <properties>
+   <property name="activatedX" type="float" value="400"/>
+   <property name="activatedY" type="float" value="20"/>
+   <property name="activators" value="5"/>
+   <property name="deactivateAfterSeconds" type="float" value="0"/>
+   <property name="defaultActivated" type="bool" value="false"/>
+   <property name="loopAnimation" type="bool" value="false"/>
+   <property name="permanentlyActivated" type="bool" value="false"/>
+   <property name="puzzlePieceId" type="int" value="7"/>
+   <property name="textureFilePath" value="textures/stonePillar.png"/>
+   <property name="time" type="float" value="10"/>
+   <property name="type" value="MovingPlatform"/>
+  </properties>
+ </object>
+</template>

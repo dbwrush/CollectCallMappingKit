@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="16" height="16">
+  <properties>
+   <property name="speed" type="float" value="1"/>
+   <property name="textureHeight" type="float" value="16"/>
+   <property name="texturePath" value="textures/shield.png"/>
+   <property name="textureWidth" type="float" value="16"/>
+   <property name="type" value="Prop"/>
+  </properties>
+ </object>
+</template>

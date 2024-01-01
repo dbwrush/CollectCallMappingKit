@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object width="32" height="32">
+  <properties>
+   <property name="activators" value="Player"/>
+   <property name="deactivateAfterSeconds" type="float" value="0"/>
+   <property name="defaultActivated" type="bool" value="false"/>
+   <property name="loopAnimation" type="bool" value="true"/>
+   <property name="permanentlyActivated" type="bool" value="false"/>
+   <property name="puzzlePieceId" type="int" value="0"/>
+   <property name="textureFilePath" value="textures/trigger.png"/>
+   <property name="type" value="UseListener"/>
+  </properties>
+ </object>
+</template>

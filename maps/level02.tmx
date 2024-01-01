@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="62">
+ <properties>
+  <property name="defaultZoom" type="float" value="0.1"/>
+  <property name="weatherParticleTextures" value="textures/raindrop.png"/>
+  <property name="weatherParticlesSpawnAngle" type="float" value="66"/>
+  <property name="weatherParticlesSpeed" type="float" value="7"/>
+  <property name="weatherParticlesSpread" type="float" value="90"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/terrain.tsx"/>
+ <tileset firstgid="109" source="../tilesets/mergedTextures.tsx"/>
+ <tileset firstgid="149" source="../tilesets/decor.tsx"/>
+ <layer id="12" name="ParallaxBack" width="40" height="20" offsetx="-32" offsety="0" parallaxx="0.95">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,0,
+115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,0,123,0,
+123,115,0,0,0,0,115,0,0,0,0,0,0,0,0,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,150,0,0,0,123,0,123,0,
+0,123,0,0,0,0,123,0,0,0,0,0,0,0,0,123,0,0,0,0,0,0,0,0,0,0,115,0,0,0,0,159,160,0,0,115,0,0,131,0,
+0,0,0,0,0,0,123,0,0,0,0,0,0,0,0,123,0,0,0,0,0,0,0,0,0,0,123,0,0,0,0,169,170,0,115,123,122,122,122,122,
+0,0,0,0,0,0,131,0,0,0,0,0,0,0,0,131,0,0,0,0,0,0,0,0,0,0,131,0,0,0,0,179,180,0,123,131,113,113,113,113,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113
+</data>
+ </layer>
+ <layer id="1" name="Background" width="40" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,0,0,
+128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,128,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,20,0,0,
+128,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,146,128,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,20,20,0,
+128,146,0,0,114,0,0,0,114,0,110,111,111,111,112,0,71,72,128,128,128,8,9,0,2147483775,0,0,0,0,114,0,0,0,0,0,0,20,20,146,0,
+128,128,122,122,122,122,122,122,122,122,122,119,119,119,48,128,122,122,122,122,122,122,122,122,2147483783,92,92,135,122,122,122,122,122,122,122,122,146,20,20,20,
+128,128,56,92,75,92,76,56,92,56,82,0,0,0,60,128,146,92,92,92,92,1,2,3,89,89,53,56,81,92,56,92,92,92,92,56,20,20,20,20,
+128,128,128,56,88,92,56,92,56,92,57,0,0,7,72,128,128,128,92,92,4,128,128,64,65,5,65,6,56,92,92,92,56,56,146,20,20,20,20,20
+</data>
+ </layer>
+ <layer id="2" name="Midground" width="40" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,8,9,0,
+9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,72,0,21,0,
+139,70,9,0,0,0,0,0,0,115,0,0,0,0,0,0,0,7,20,8,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,70,9,
+139,139,58,0,0,0,0,0,0,123,0,0,0,0,0,0,115,60,146,139,123,115,0,0,115,0,0,0,0,0,0,0,0,0,0,60,0,0,0,21,
+139,0,21,0,0,0,0,0,0,131,0,0,0,0,7,8,123,72,139,139,131,123,9,0,123,114,125,127,0,0,0,0,114,0,0,19,0,0,139,70,
+0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,70,9,0,0,0,0,0,0,0,133,133,0,0,0,0,0,0,0,0,60,0,0,139,139,
+0,0,70,9,0,0,0,7,8,9,0,0,0,0,0,0,0,70,9,0,0,0,0,0,0,0,0,0,113,0,0,0,0,7,8,72,0,0,0,139,
+0,0,0,21,7,71,8,72,20,70,71,9,0,0,0,0,0,0,20,8,71,0,0,0,0,0,0,0,113,0,7,8,71,72,0,0,139,0,0,0
+</data>
+ </layer>
+ <layer id="8" name="Foreground" width="40" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,0,0,0,
+0,129,136,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,114,0,2147483775,125,0,0,0,0,0,0,0,0,0,0,139,115,0,0,
+136,137,144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,0,0,
+144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139,139,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,0,0
+</data>
+ </layer>
+ <layer id="10" name="top" width="40" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,151,0,129,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,136,137,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,136,137,144,145,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,137,144,145,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,181,0,
+0,161,0,0,0,0,0,0,151,0,0,0,0,0,0,0,161,0,0,0,0,0,181,0,0,0,0,0,0,0,0,0,0,0,0,151,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="ParallaxTop" width="40" height="20" parallaxx="1.1">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+115,0,0,0,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,0,0,0,0,0,115,0,0,0,0,0,0,
+123,0,0,115,123,0,0,115,0,0,0,0,0,0,0,0,115,0,0,0,0,0,0,0,0,0,115,123,0,0,0,115,0,123,0,115,0,0,0,0,
+131,0,0,123,123,0,0,123,0,0,115,0,0,0,0,115,123,0,0,0,115,0,0,0,0,0,123,123,0,0,0,123,0,131,0,123,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="Ladders" visible="0"/>
+ <objectgroup id="3" name="LevelSwitch" visible="0">
+  <object id="35" x="560" y="256" width="16" height="16">
+   <properties>
+    <property name="destinationMapFilePath" value="maps/level03.tmx"/>
+    <property name="destinationX" type="float" value="2.5"/>
+    <property name="destinationY" type="float" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="LevelCollision" visible="0">
+  <object id="23" x="16" y="272" width="560" height="16"/>
+  <object id="24" x="16" y="208" width="25" height="64"/>
+  <object id="29" x="402" y="264">
+   <polygon points="0,0 -64,32 0,32"/>
+  </object>
+  <object id="30" x="402" y="264" width="28" height="16"/>
+  <object id="31" x="430" y="264">
+   <polygon points="0,0 64,32 0,32 0,0"/>
+  </object>
+  <object id="33" x="566" y="208" width="16" height="64"/>
+ </objectgroup>
+ <objectgroup id="5" name="CameraModes">
+  <object id="52" x="64" y="192" width="176" height="96">
+   <properties>
+    <property name="cameramode" value="center"/>
+    <property name="targetzoom" type="float" value="0.2"/>
+   </properties>
+  </object>
+  <object id="57" x="464" y="192" width="48" height="80">
+   <properties>
+    <property name="cameramode" value="center"/>
+    <property name="targetzoom" type="float" value="0.2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="PuzzleObjects">
+  <object id="4" x="80" y="256" width="16" height="16">
+   <properties>
+    <property name="activators" value="Player"/>
+    <property name="deactivateAfterSeconds" type="float" value="5"/>
+    <property name="defaultActivated" type="bool" value="false"/>
+    <property name="highlightAnimation" value="textures/leverHighlight.png"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="0"/>
+    <property name="textureFilePath" value="textures/lever.png"/>
+    <property name="type" value="UseListener"/>
+   </properties>
+  </object>
+  <object id="5" x="112" y="256" width="16" height="16">
+   <properties>
+    <property name="activators" value="Player"/>
+    <property name="deactivateAfterSeconds" type="float" value="2"/>
+    <property name="defaultActivated" type="bool" value="false"/>
+    <property name="highlightAnimation" value="textures/leverHighlight.png"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="1"/>
+    <property name="textureFilePath" value="textures/lever.png"/>
+    <property name="type" value="UseListener"/>
+   </properties>
+  </object>
+  <object id="6" x="144" y="256" width="16" height="16">
+   <properties>
+    <property name="activators" value="Player"/>
+    <property name="deactivateAfterSeconds" type="float" value="5"/>
+    <property name="defaultActivated" type="bool" value="false"/>
+    <property name="highlightAnimation" value="textures/leverHighlight.png"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="2"/>
+    <property name="textureFilePath" value="textures/lever.png"/>
+    <property name="type" value="UseListener"/>
+   </properties>
+  </object>
+  <object id="7" x="192" y="304" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="3"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="37" x="192" y="288" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="4"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="38" x="192" y="272" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="5"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="39" x="192" y="256" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="6"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="40" x="192" y="224" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="7"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="41" x="192" y="240" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="8"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="42" x="192" y="208" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="9"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="43" x="192" y="192" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="10"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="44" x="192" y="176" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="11"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="45" x="192" y="144" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="12"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="46" x="192" y="160" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="13"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="47" x="192" y="128" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="14"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="48" x="192" y="112" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="15"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="49" x="192" y="96" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="16"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+  <object id="50" x="192" y="80" width="16" height="16">
+   <properties>
+    <property name="activators" value="1"/>
+    <property name="animateOnInternalActivation" type="bool" value="true"/>
+    <property name="deactivateAfterSeconds" type="float" value="0"/>
+    <property name="defaultActivated" type="bool" value="true"/>
+    <property name="loopAnimation" type="bool" value="false"/>
+    <property name="passiveAnimationFilePath" value="textures/water.png"/>
+    <property name="permanentlyActivated" type="bool" value="false"/>
+    <property name="puzzlePieceId" type="int" value="17"/>
+    <property name="textureFilePath" value="textures/waterStop.png"/>
+    <property name="type" value="ToggleCollision"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="DialogueObjects">
+  <object id="32" x="480" y="240" width="16" height="32">
+   <properties>
+    <property name="highlightTextureFilePath" value="textures/boothHighlight.png"/>
+    <property name="rootFilePath" value="dialogues/level2.json"/>
+    <property name="textureFilePath" value="textures/booth.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="15" name="EntitySpawner" visible="0">
+  <object id="54" x="52" y="242" width="10" height="30">
+   <properties>
+    <property name="speed" type="float" value="1"/>
+    <property name="textureHeight" type="float" value="32"/>
+    <property name="texturePath" value="textures/player.png"/>
+    <property name="textureWidth" type="float" value="16"/>
+    <property name="type" value="Player"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="16" name="Hints">
+  <object id="56" x="480" y="224" width="16" height="16">
+   <properties>
+    <property name="button" value="Y"/>
+    <property name="showDist" type="float" value="40"/>
+   </properties>
+  </object>
+  <object id="59" x="144" y="240" width="16" height="16">
+   <properties>
+    <property name="button" value="Y"/>
+    <property name="showDist" type="float" value="20"/>
+   </properties>
+  </object>
+  <object id="60" x="112" y="240" width="16" height="16">
+   <properties>
+    <property name="button" value="Y"/>
+    <property name="showDist" type="float" value="20"/>
+   </properties>
+  </object>
+  <object id="61" x="80" y="240" width="16" height="16">
+   <properties>
+    <property name="button" value="Y"/>
+    <property name="showDist" type="float" value="20"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
