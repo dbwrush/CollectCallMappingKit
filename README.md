@@ -3,13 +3,13 @@ A collection of files for making custom maps for Collect Call.
 
 This mapmaking kit contains all the assets used to create Collect Call's levels. Before you start making your own, I suggest looking at some of mine so you know how this works.
 
-#OPENING EXISTING MAPS
+OPENING EXISTING MAPS
 If you look in the maps folder, you'll see 15 maps which were made for Collect Call. You can open these with Tiled. 
 
 If you see a bunch of red Xs everywhere, don't be alarmed. The red X means that Tiled wasn't able to automatically find
 the Tilesets for the map. All the Tilesets for my maps are in the tileset folder. You should see a list of missing files at the top of your screen, click one and then click "Locate File". Most maps will have 3-4 tilesets. 
 
-#MAP PROPERTIES
+MAP PROPERTIES
 Each map has some properties that control how the game reads it. I'll list the important parameters below.
  - defaultZoom: This controls how the camera will zoom by default. This is usually a decimal between 0.1 and 0.3. You can adjust this as you wish. This property is required.
  - weatherParticleTextures: This is the path the game should use to find weather particles in. Use "textures/raindrop.png" for a raindrop.
@@ -19,11 +19,11 @@ Each map has some properties that control how the game reads it. I'll list the i
 
 Looking in Tiled, you can see each map is made up of layers. Some layers contain just Tiles with textures, while others have Objects which have properties and shapes. 
 
-#TILE LAYERS
+TILE LAYERS
 Your maps can have as many tile layers as you want, and their names don't matter either. You can use multiple layers to produce a parralax effect. Tile layers don't need any special properties.
 Tile layers can have parallax on them, but be aware that entities and puzzle objects will always be drawn on top of the map, so be careful or it will look very weird.
 
-#OBJECT LAYERS
+OBJECT LAYERS
 This game uses object layers to store data about places in the map. Objects are usually shapes that have some data attached. A few layers are required for a map to load, but some are optional.
 
 Required Object Layers:
