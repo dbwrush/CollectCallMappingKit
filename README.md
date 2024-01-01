@@ -2,6 +2,8 @@
 
 This repository contains all the assets used to create levels for Collect Call. Before you start creating your own maps, it's recommended to explore some existing ones to understand the process.
 
+You can download Tiled from https://mapeditor.org
+
 ## Opening Existing Maps
 
 In the `maps` folder, you'll find 15 maps created for Collect Call. You can open these maps using Tiled. If you encounter red Xs, don't worry; Tiled couldn't automatically find the Tilesets. All Tilesets for these maps are in the `tileset` folder. Locate the missing files by following the prompts in Tiled.
