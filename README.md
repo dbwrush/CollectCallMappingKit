@@ -69,7 +69,7 @@ Optional Layers:
 	 - BOOLEAN loopAnimation: If enabled, the object will play its animation as long as it is activated.
 	
  	PuzzleObject Types:
-		- PuzzleListener: Generic puzzle object which is activated by other puzzle objects.
+   		PuzzleListener: Generic puzzle object which is activated by other puzzle objects.
 		 - STRING activators: Comma-separated list of puzzle object IDs which this object should listen to.
 		 Subtypes: 
    			- Clock: Oscilates between reporting active and inactive so long as it is activated. If inactive, it will report whatever state it was in when it lost activation.
@@ -85,13 +85,12 @@ Optional Layers:
 				 - FLOAT activatedY: Sets where the object will move on Y axis when it is activated.
 				 - FLOAT time: Time, in seconds, for the object to move between positions.
    				- ToggleCollision: Collision that can be toggled on/off by puzzles. No special properties.
-		- EntityListener: Generic puzzle object which is activated by entities
+   		EntityListener: Generic puzzle object which is activated by entities
 		 - STRING activators: Comma-separated list of entity types which this object should listen for.
 		 - FLOAT gravity: Strength that this object will pull activators towards it. Use a negative number to repel activators.
-		 Subtypes:
-		- FlagListener: Activated by flags, which are variables set by the game to track progress.
+		FlagListener: Activated by flags, which are variables set by the game to track progress.
 		 - STRING activators: Comma-separated list of flag strings the object should listen for.
-		- UseListener: Toggled on/off by player interaction.
+		UseListener: Toggled on/off by player interaction.
 		 - STRING highlightAnimation: path to an alternate texture/animation that should show when the player gets close.
  - Ladders
 	Ladders are set in a manner similar to LevelCollision. Anytime the player is overlapping a rectangle object in the Ladders layer, the player will have ladder controls rather than normal controls.
