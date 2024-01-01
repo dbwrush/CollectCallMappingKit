@@ -72,30 +72,23 @@ Optional Layers:
 		- PuzzleListener: Generic puzzle object which is activated by other puzzle objects.
 		 - STRING activators: Comma-separated list of puzzle object IDs which this object should listen to.
 		 Subtypes: 
-
-   			Clock: Oscilates between reporting active and inactive so long as it is activated. If inactive, it will report whatever state it was in when it lost activation.
+   			- Clock: Oscilates between reporting active and inactive so long as it is activated. If inactive, it will report whatever state it was in when it lost activation.
 			 - FLOAT onTime: Length of time, in milliseconds, that it should be on.
 			 - FLOAT offTime: Length of time, in milliseconds, that it should be off.
-
-   			FlagSetter: Sets one or more flags when it transitions from inactive to active. If the flags are later unset, this object will re-set them if it is deactivated and then reactivated.
+   			- FlagSetter: Sets one or more flags when it transitions from inactive to active. If the flags are later unset, this object will re-set them if it is deactivated and then reactivated.
 			 - STRING flags: Comma-separated list of flags this object should set.
-
-   			PuzzleCollision: Generic puzzle listener with modifiable collision.
+   			- PuzzleCollision: Generic puzzle listener with modifiable collision.
 			 Subtypes:
-
-   				MovingPlatform: Collision that moves between two locations.
+   				- MovingPlatform: Collision that moves between two locations.
 				 - BOOLEAN absoluteActivatedPos (optional): activated position will be relative to the map rather than relative to the object's default position. Use this if you like headaches, I might remove it later.
 				 - FLOAT activatedX: Sets where the object will move on X axis when it is activated.
 				 - FLOAT activatedY: Sets where the object will move on Y axis when it is activated.
 				 - FLOAT time: Time, in seconds, for the object to move between positions.
-
-   				ToggleCollision: Collision that can be toggled on/off by puzzles. No special properties.
-
+   				- ToggleCollision: Collision that can be toggled on/off by puzzles. No special properties.
 		- EntityListener: Generic puzzle object which is activated by entities
 		 - STRING activators: Comma-separated list of entity types which this object should listen for.
 		 - FLOAT gravity: Strength that this object will pull activators towards it. Use a negative number to repel activators.
 		 Subtypes:
-
 		- FlagListener: Activated by flags, which are variables set by the game to track progress.
 		 - STRING activators: Comma-separated list of flag strings the object should listen for.
 		- UseListener: Toggled on/off by player interaction.
