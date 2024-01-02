@@ -1,4 +1,6 @@
 {
+"description": "root",
+"text": "This is the beginning of the dialogue, and will prompt the player's first reply."
 "options": [
 	{
 		"description": "say Hi",
@@ -6,6 +8,8 @@
 		"end": true
 	},
 	{
+		"description": "ask deep philosophical question",
+		"text": "A deep philosophical question? Ok, let's hear it."
 		"options": [
 			{
 				"description": "is cereal a salad?",
@@ -23,10 +27,6 @@
 				"end": true
 			}
 		],
-		"description": "ask deep philosophical question",
-		"text": "A deep philosophical question? Ok, let's hear it."
 	}
 ],
-"description": "root",
-"text": "This is the beginning of the dialogue, and will prompt the player's first reply."
 }
