@@ -8,6 +8,11 @@ You can download Tiled from https://mapeditor.org
 
 In the `maps` folder, you'll find 15 maps created for Collect Call. You can open these maps using Tiled. If you encounter red Xs, don't worry; that just means Tiled couldn't automatically find the Tilesets. All Tilesets for these maps are in the `tileset` folder. Locate the missing files by following the prompts in Tiled.
 
+## Making Your Own Maps
+When you distribute your map, you will need to include the map's .tmx file along with any other assets needed to run it. That includes any custom textures, dialogue files, etc. These should all be in one folder together.
+Collect Call scans two places for map folders. The first is the Custom folder located in the same directory as the game's .jar file, and second is the content you've downloaded from Steam Workshop. Collect Call scans for .tmx files with names starting with "cc_".
+The maps that are found are displayed in the game select screen by their file names with the "cc_" and ".tmx" removed and any underscores replaced with spaces. A map named "cc_Collect_Call.tmx" would be displayed as "Collect Call", so use this to set your mod's name! If your mod contains multiple maps, the later maps do not need to follow any specific naming convention. Maps are loaded when the game is prompted to open a map file by a LevelSwitch object.
+
 ## Map Properties
 
 Each map has properties that control how the game interprets it. Important parameters include:
