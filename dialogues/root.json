@@ -1,0 +1,32 @@
+{
+"options": [
+	{
+		"description": "say Hi",
+		"text": "Good morning!",
+		"end": true
+	},
+	{
+		"options": [
+			{
+				"description": "is cereal a salad?",
+				"text": "Would the milk be the dressing then? I don't think that works. Cereal is a soup.",
+				"end": true
+			},
+			{
+				"description": "is pizza an open-faced sandwich?",
+				"text": "There's some logic to that, I can't deny.",
+				"end": true
+			},
+			{
+				"description": "do you have free will?",
+				"text": "That went from 0 to 60 real quick. Sure, I guess.",
+				"end": true
+			}
+		],
+		"description": "ask deep philosophical question",
+		"text": "A deep philosophical question? Ok, let's hear it."
+	}
+],
+"description": "root",
+"text": "This is the beginning of the dialogue, and will prompt the player's first reply."
+}
