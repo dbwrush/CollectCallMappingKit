@@ -63,7 +63,7 @@ Objects represent the world's collision. No extra properties necessary.
 
 Controls switching to other levels, including game-ending transitions:
 
-- `destinationMapFilePath`: Path to the next level.
+- `destinationMapFilePath`: Path to the next level. Enter "modpath/" for the folder your custom map is in. Example: "modpath/dialogues/example.json". 
 - `destinationX`: Player's x-axis upon switching.
 - `destinationY`: Player's y-axis upon switching.
 
@@ -81,41 +81,78 @@ Overrides default camera behavior:
 - `cameramode`: "center" or "follow" for camera behavior.
 - `targetzoom`: Camera zoom distance.
 
+## DialogueObjects
+
+Place interactable dialogues in the world. Dialogues are written as .json files. This kit contains an example one.
+
+- `rootFilePath`: Path to the .json file containing this dialogue. Enter "modpath/" for the folder your custom map is in. Example: "modpath/dialogues/example.json". 
+- `textureFilePath`: Path to the texture for this object. Set it to an empty string to make it invisible.
+
+
 ## PuzzleObjects
 
-Places puzzles in the level with required and optional properties.
+PuzzleObjects are used to place puzzles within the level. They include required and optional properties.
 
 ### Required Properties:
 
-- `puzzlePieceID`: Unique identifier for a puzzle piece.
-- `textureFilePath`: Path to the texture file.
-- `type`: Controls puzzle object type.
+- **puzzlePieceID (INT):** Unique identifier for a puzzle piece, starting from 0. Do not skip IDs to avoid game crashes.
+- **textureFilePath (STRING):** Path to the texture file. Must be present; set as an empty string for an invisible object.
+- **type (STRING):** Controls the type of puzzle object loaded.
+- **deactivateAfterSeconds (FLOAT):** Object remains active for this duration; not used by all puzzle types.
 
 ### Optional Properties:
 
-- `animateOnInternalActivation`: Animation unaffected by defaultActivated.
-- `defaultActivated`: Enables object when it would be inactive and vice versa.
-- `flipped`: Flips the object's texture.
-- `or`: Enables activation with only one activator.
-- `passiveAnimationFilePath`: Path to an animation when inactive.
-- `permanentlyActivated`: Keeps the object active forever.
-- `loopAnimation`: Object plays animation while activated.
+- **animateOnInternalActivation (BOOLEAN):** Animation unaffected by the defaultActivated property.
+- **defaultActivated (BOOLEAN):** Enables the object when it would be inactive and vice versa.
+- **flipped (BOOLEAN):** Flips the object's texture.
+- **or (BOOLEAN):** If enabled, only 1 item in the activators list is needed to activate this object, rather than all of them.
+- **passiveAnimationFilePath (STRING):** Path to an animation the object should play when inactive.
+- **permanentlyActivated (BOOLEAN):** If enabled, the object stays active forever.
+- **loopAnimation (BOOLEAN):** If enabled, the object plays its animation as long as it is activated.
 
-### PuzzleObject Types:
+## PuzzleObject Types:
 
-- `PuzzleListener`: Generic puzzle activated by other puzzle objects.
-  - `activators`: Comma-separated IDs of puzzle objects to listen to.
-  - Subtypes: Clock, FlagSetter, PuzzleCollision.
+### PuzzleListener:
 
-- `EntityListener`: Activated by entities.
-  - `activators`: Comma-separated entity types to listen for.
-  - Subtypes: FlagListener, UseListener.
+Generic puzzle object activated by other puzzle objects.
 
-- `FlagListener`: Activated by game flags.
-  - `activators`: Comma-separated flag strings to listen for.
+- **activators (STRING):** Comma-separated list of puzzle object IDs that this object should listen to.
+  
+  #### Subtypes:
 
-- `UseListener`: Toggled on/off by player interaction.
-  - `highlightAnimation`: Path to alternate texture/animation when close.
+  - **Clock:**
+    - **onTime (FLOAT):** Length of time, in milliseconds, that it should be on.
+    - **offTime (FLOAT):** Length of time, in milliseconds, that it should be off.
+
+  - **FlagSetter:**
+    - **flags (STRING):** Comma-separated list of flags this object should set.
+
+  - **PuzzleCollision:**
+    - #### Subtypes:
+  
+      - **MovingPlatform:**
+        - **absoluteActivatedPos (BOOLEAN - optional):** Activated position relative to the map rather than the object's default position.
+        - **activatedX (FLOAT):** Sets where the object will move on the X-axis when activated.
+        - **activatedY (FLOAT):** Sets where the object will move on the Y-axis when activated.
+        - **time (FLOAT):** Time, in seconds, for the object to move between positions.
+
+      - **ToggleCollision:**
+        - No special properties.
+
+### EntityListener:
+
+Generic puzzle object activated by entities.
+
+- **activators (STRING):** Comma-separated list of entity types that this object should listen for.
+- **gravity (FLOAT):** Strength that this object will pull activators towards it. Use a negative number to repel activators.
+
+  #### Subtypes:
+
+  - **FlagListener:**
+    - **activators (STRING):** Comma-separated list of flag strings the object should listen for.
+
+  - **UseListener:**
+    - **highlightAnimation (STRING):** Path to an alternate texture/animation that should show when the player gets close.
 
 ## Ladders
 
