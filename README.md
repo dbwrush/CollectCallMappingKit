@@ -71,6 +71,8 @@ Controls switching to other levels, including game-ending transitions:
 - `destinationMapFilePath`: Path to the next level. Enter "modpath/" for the folder your custom map is in. Example: "modpath/dialogues/example.json". 
 - `destinationX`: Player's x-axis upon switching.
 - `destinationY`: Player's y-axis upon switching.
+- `flags`: Optional, list any flags that are requied to use this switch. They should be separated by commas.
+- `useKey`: Optional, boolean to require the player to press the use key to use this switch.
 
 ## Hints
 
