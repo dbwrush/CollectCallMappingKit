@@ -39,10 +39,10 @@ Object layers store data about map locations, including required and optional la
 
 - `EntitySpawner`: Controls entity spawn points.
 - `LevelCollision`: Defines the world's collision.
-- `LevelSwitch`: Manages level switching, including game-ending transitions.
 
 #### Optional Layers:
 
+- `LevelSwitch`: Manages level switching, including game-ending transitions.
 - `Hints`: Provides button prompts.
 - `CameraModes`: Overrides default camera behavior.
 - `PuzzleObjects`: Places puzzles in the level.
