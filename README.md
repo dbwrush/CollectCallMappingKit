@@ -94,7 +94,7 @@ Place interactable dialogues in the world. Dialogues are written as .json files.
 
 - `rootFilePath`: Path to the .json file containing this dialogue. Enter "modpath/" for the folder your custom map is in. Example: "modpath/dialogues/example.json". 
 - `textureFilePath`: Path to the texture for this object. Set it to an empty string to make it invisible.
-
+- `resetOnOpen`: Optional, enable if the player should be able to redo this dialogue.
 
 ## PuzzleObjects
 
